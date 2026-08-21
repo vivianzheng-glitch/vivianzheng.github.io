@@ -1,0 +1,106 @@
+/* Portfolio layout: projects are displayed as responsive side-by-side cards. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: #fffef9;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  margin: 1rem 0 3rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  color: #666;
+  margin: 0.25rem 0 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.project {
+  margin: 0;
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #e5e1d8;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.project h2 {
+  margin: 0 0 0.25rem;
+}
+
+.project .meta {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0 0 1rem;
+}
+
+figure {
+  margin: 1.25rem 0;
+}
+
+img,
+video,
+presentation {
+  width: 100%;
+  display: block;
+}
+
+video {
+  border-radius: 10px;
+  background: #111;
+}
+
+presentation {
+  min-height: 300px;
+}
+
+figcaption {
+  color: #666;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.project p:last-child {
+  margin-bottom: 0;
+}
+
+footer {
+  margin: 4rem 0 2rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 1.25rem;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project {
+    padding: 1.25rem;
+  }
+}
