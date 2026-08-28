@@ -7,11 +7,11 @@
 body {
   font-family: system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
-  color: #1a1a1a;
-  background: #fffef9;
-  max-width: 1200px;
+  color: #f4f0e6;
+  background: #101a35;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3rem;
 }
 
 header {
@@ -31,15 +31,15 @@ main {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
-  align-items: stretch;
+  align-items: start;
 }
 
 .project {
   margin: 0;
-  padding: 1.5rem;
-  background: #ffffff;
+  padding: 2rem;
+  background: #172342;
   border: 1px solid #e5e1d8;
-  border-radius: 18px;
+  border-radius: 20px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
   overflow: hidden;
 }
@@ -90,9 +90,9 @@ footer {
   font-size: 0.9rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   body {
-    padding: 1.25rem;
+    padding: 1.5rem;
   }
 
   main {
