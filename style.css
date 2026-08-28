@@ -1,4 +1,4 @@
-/* Portfolio layout: projects are displayed as responsive side-by-side cards. */
+/* Portfolio layout */
 
 * {
   box-sizing: border-box;
@@ -14,18 +14,87 @@ body {
   padding: 3rem;
 }
 
-header {
-  margin: 1rem 0 3rem;
+/* =========================
+   NAVIGATION
+   ========================= */
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
 }
 
-header h1 {
-  margin: 0;
+.nav-name {
+  color: #f4f0e6;
+  text-decoration: none;
+  font-weight: 700;
 }
 
-header p {
-  color: #666;
-  margin: 0.25rem 0 0;
+.nav-links {
+  display: flex;
+  gap: 2rem;
 }
+
+.nav-links a {
+  color: #f4f0e6;
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+}
+
+.nav-links a:hover {
+  opacity: 0.6;
+}
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 6rem;
+}
+
+.hero .eyebrow {
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 8vw, 7rem);
+  line-height: 1;
+  margin: 0 0 1.5rem;
+}
+
+.hero-intro {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #c9c5bc;
+}
+
+/* =========================
+   GENERAL TEXT
+   ========================= */
+
+.eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  color: #aaa69d;
+  text-align: center;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+/* =========================
+   PROJECT GRID
+   ========================= */
 
 main {
   display: grid;
@@ -34,33 +103,50 @@ main {
   align-items: start;
 }
 
+/* =========================
+   PROJECT CARDS
+   ========================= */
+
 .project {
   margin: 0;
-  padding: 2rem;
+  padding: 2.5rem;
   background: #172342;
-  border: 1px solid #e5e1d8;
+  border: 1px solid #2c3957;
   border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
   overflow: hidden;
+  text-align: center;
+}
+
+.project-number {
+  color: #aaa69d;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
 }
 
 .project h2 {
-  margin: 0 0 0.25rem;
+  margin: 0 0 0.4rem;
+}
+
+.project-subtitle {
+  color: #c9c5bc;
+  margin-bottom: 0.5rem;
 }
 
 .project .meta {
-  color: #666;
-  font-size: 0.9rem;
-  margin: 0 0 1rem;
+  color: #aaa69d;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  margin: 0 0 1.5rem;
 }
 
 figure {
-  margin: 1.25rem 0;
+  margin: 1.5rem 0;
 }
 
 img,
 video,
-presentation {
+iframe {
   width: 100%;
   display: block;
 }
@@ -70,29 +156,176 @@ video {
   background: #111;
 }
 
-presentation {
-  min-height: 300px;
+iframe {
+  border: none;
+  border-radius: 10px;
 }
 
 figcaption {
-  color: #666;
+  color: #aaa69d;
   font-size: 0.85rem;
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
 }
 
-.project p:last-child {
-  margin-bottom: 0;
+/* =========================
+   PROJECT PROCESS
+   ========================= */
+
+.project-process {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+  text-align: left;
 }
 
-footer {
-  margin: 4rem 0 2rem;
-  color: #666;
+.project-process > div {
+  padding-top: 1rem;
+  border-top: 1px solid #34415e;
+}
+
+.detail-label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  color: #aaa69d;
+  margin-bottom: 0.4rem;
+}
+
+.project-process p {
+  color: #d4d0c7;
   font-size: 0.9rem;
 }
+
+/* =========================
+   WHAT I MAKE
+   ========================= */
+
+.pattern-section {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.pattern-section h2 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 3rem;
+}
+
+.pattern-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  text-align: left;
+}
+
+.pattern-item {
+  padding: 1.5rem;
+  border: 1px solid #2c3957;
+  border-radius: 15px;
+  background: #172342;
+}
+
+.pattern-project {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: #aaa69d;
+  margin-bottom: 0.75rem;
+}
+
+.pattern-item strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.pattern-item p {
+  color: #c9c5bc;
+  font-size: 0.9rem;
+}
+
+.pattern-summary {
+  max-width: 600px;
+  margin: 3rem auto 0;
+  font-size: 1.1rem;
+  color: #d4d0c7;
+}
+
+/* =========================
+   ABOUT
+   ========================= */
+
+.info-section {
+  grid-column: 1 / -1;
+  max-width: 800px;
+  margin: 3rem auto;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.info-section h2 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 1.5rem;
+}
+
+.about-lede {
+  font-size: 1.3rem;
+  color: #d4d0c7;
+  margin-bottom: 1.5rem;
+}
+
+/* =========================
+   CONTACT
+   ========================= */
+
+.contact-section {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.contact-section h2 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 1rem;
+}
+
+.contact-section a {
+  color: #f4f0e6;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.contact-section a:hover {
+  opacity: 0.6;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+  margin: 5rem 0 2rem;
+  text-align: center;
+  color: #aaa69d;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   MOBILE
+   ========================= */
 
 @media (max-width: 900px) {
   body {
     padding: 1.5rem;
+  }
+
+  .site-nav {
+    margin-bottom: 4rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
   }
 
   main {
@@ -101,6 +334,35 @@ footer {
   }
 
   .project {
-    padding: 1.25rem;
+    padding: 1.5rem;
+  }
+
+  .pattern-section,
+  .info-section,
+  .contact-section {
+    grid-column: 1;
+  }
+
+  .pattern-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .project-process {
+    grid-template-columns: 1fr;
+  }
+
+  .pattern-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    margin-bottom: 4rem;
   }
 }
