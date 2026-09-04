@@ -154,10 +154,6 @@ iframe {
 }
 
 video {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  height: auto;
-  object-fit: contain;
   border-radius: 10px;
   background: #111;
 }
