@@ -326,6 +326,20 @@ figcaption {
   opacity: 0.6;
 }
 
+/* BACK TO TOP inside CONTACT */
+
+.contact-section .back-to-top a {
+  color: #aaa69d;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.contact-section .back-to-top a:hover {
+  color: #f4f0e6;
+}
+
 /* =========================
    FOOTER
    ========================= */
