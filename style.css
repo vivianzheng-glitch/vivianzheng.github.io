@@ -205,7 +205,6 @@ figcaption {
    ========================= */
 
 .back-to-top {
-  grid-column: 1 / -1;
   width: 100%;
   margin: 3rem auto 0;
   text-align: center;
@@ -213,7 +212,7 @@ figcaption {
 
 .back-to-top a {
   display: inline-block;
-  font-family: inherit;
+  font-family: system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
   color: #aaa69d;
   text-decoration: none;
   font-size: 0.75rem;
@@ -322,14 +321,6 @@ figcaption {
   color: #f4f0e6;
   text-decoration: none;
   font-size: 1.1rem;
-}
-
-/* ADD THIS */
-.contact-section .back-to-top a {
-  font-size: 0.75rem;
-  color: #aaa69d;
-  letter-spacing: 0.12em;
-  font-weight: 700;
 }
 
 .contact-section a:hover {
