@@ -324,6 +324,14 @@ figcaption {
   font-size: 1.1rem;
 }
 
+/* ADD THIS */
+.contact-section .back-to-top a {
+  font-size: 0.75rem;
+  color: #aaa69d;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+}
+
 .contact-section a:hover {
   opacity: 0.6;
 }
