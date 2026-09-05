@@ -8,7 +8,12 @@ body {
   font-family: system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
   color: #f4f0e6;
-  background: #101a35;
+  background: linear-gradient(
+  180deg,
+  #87CEEB 0%,
+  #A9D8F0 45%,
+  #C8B6E8 100%
+);
   max-width: 1400px;
   margin: 0 auto;
   padding: 3rem;
