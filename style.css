@@ -62,7 +62,12 @@ body {
 }
 
 .hero .eyebrow {
-  margin-bottom: 1rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #f4f0e6;
+  border-radius: 999px;
+  color: #f4f0e6;
 }
 
 .hero h1 {
