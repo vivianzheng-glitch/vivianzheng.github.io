@@ -8,12 +8,7 @@ body {
   font-family: system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
   color: #f4f0e6;
-  background: linear-gradient(
-  180deg,
-  #87CEEB 0%,
-  #A9D8F0 45%,
-  #C8B6E8 100%
-);
+  background: #082567;
   max-width: 1400px;
   margin: 0 auto;
   padding: 3rem;
@@ -117,9 +112,8 @@ main {
   width: 100%;
   margin: 0 auto;
   padding: 2.5rem;
-  background: #f4f0e6;
-  color: #101a35;
-  border: 1px solid #f4f0e6;
+  background: #172342;
+  border: 1px solid #2c3957;
   border-radius: 20px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
   overflow: hidden;
@@ -127,7 +121,7 @@ main {
 }
 
 .project-number {
-  color: #5c6475;
+  color: #aaa69d;
   font-size: 0.8rem;
   letter-spacing: 0.1em;
 }
@@ -142,7 +136,7 @@ main {
 }
 
 .project .meta {
-  color: #5c6475;
+  color: #aaa69d;
   font-size: 0.8rem;
   letter-spacing: 0.05em;
   margin: 0 0 1.5rem;
@@ -189,7 +183,7 @@ figcaption {
 
 .project-process > div {
   padding-top: 1rem;
-  border-top: 1px solid #c8c5bd;
+  border-top: 1px solid #34415e;
 }
 
 .detail-label {
@@ -197,12 +191,12 @@ figcaption {
   font-size: 0.7rem;
   letter-spacing: 0.12em;
   font-weight: 700;
-  color: #5c6475;
+  color: #aaa69d;
   margin-bottom: 0.4rem;
 }
 
 .project-process p {
-  color: #343b4d;
+  color: #d4d0c7;
   font-size: 0.9rem;
 }
 
@@ -219,7 +213,7 @@ figcaption {
 .back-to-top a {
   display: inline-block;
   font-family: inherit;
-  color: #9da7bd;
+  color: #aaa69d;
   text-decoration: none;
   font-size: 0.75rem;
   letter-spacing: 0.12em;
