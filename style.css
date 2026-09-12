@@ -402,3 +402,27 @@ footer {
     margin-bottom: 4rem;
   }
 }
+
+/* =========================
+   PDF VIEWER
+   ========================= */
+
+.project iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+}
+
+/* Make PDF viewer more phone-friendly */
+@media (max-width: 600px) {
+  .project iframe {
+    height: 450px;
+  }
+
+  .project figure {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
